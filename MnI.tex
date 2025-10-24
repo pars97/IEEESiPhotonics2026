@@ -1,14 +1,16 @@
-
-
-A digital electronic kit was created with over 230 individual designs of logic gates and flip-flops of different kinds and strength for the AMF silicon photonics process\CitationNeeded.
-The GDS design and their \textit{Library Exchange Format} were made by the python-based drawing tool for photonics, GDSFactory \CitationNeeded.
-Tney were then fed into an open-source automated router, OpenROAD\CitationNeeded, along with the verilog design files and the translated technology files based on the foundry's process manual. 
-The Linux-based tool running on a Windows-WSL machine then outputted a simple digital core made for with a serial-parrallel interface (SPI), shown in Fig. \ref{fig:Core}, with the capabilities to access up to eight 12-bits DAC and ADC.
+The proposed approch in this article is to give the photonics chip the ability to communicate digitally with an external controller, fixing the number of external connections. 
+The Fig.\ref{fig:Core}.A shows the proposed architecture of an electronic-photonic integrated circuit with an internal core driving photonic structures with a DAC and an array of sample and hold circuits, and receiving signal from power monitor photodetectors with an ADC, a transimpedance amplifier and an analog multiplexer. 
+The analog circuits can be made directly with the transistors while the mixed and digital circuits need more tooling to be possible. 
+Thus, a digital electronic kit was created.
+It was then fed into an open-source automated router, OpenROAD\cite{ajayi_openroad_2019}, along with the verilog design files and the technology files. 
+The conceptual schematic of the core is shown in Fig.\ref{fig:Core}.B while the layout is shown in Fig.\ref{fig:Core}.C.
 
 Some challenges did arise, one file we were not able to provide to the router yet is the timing library of the gates, which can either be simulated by parasitic extraction simulations or constructed via a measurment campaign.  
 Nevertheless, not having the exact timing of the gate influences the maximum clock frequency of the circuit, not its logics, as the circuit will still be capable to compute at a lower speed than expected. 
 Additionnaly, during our first measurment campaign of the reduced $L$ and smaller gap transistors, a flaw in the fabrication process was discovered. 
 Since the photonics nodes care much more about the optical properties of the waveguides, when we closed the gap between the channel and the gate,a significant amount of the transistor exhibited an unwanted electrical connection was made between the gate and the drain/source or channel, meaning that the device was unusable with the minimal distance prescribed by the foundry. 
+Finally, while the size of the Fig.\ref{fig:Core}.C is large, shrinking it is not limited by the physics of the implementation but rather the foundry's tolerances on vias and metals.
+ 
 
 
 

@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex IEEESiPhotonics2026_main"] 1761239270.87612 "IEEESiPhotonics2026_main.aux" "IEEESiPhotonics2026_main.bbl" "IEEESiPhotonics2026_main" 1761239271.89817 0
-  "./IEEEtran.bst" 1761239198.13051 57747 625f9a3bfac65a756d24e7c02eaf0578 ""
-  "./bibli.bib" 1761239270.72548 1407 9490713169d8af86f34bebdf30aacaf4 ""
-  "IEEESiPhotonics2026_main.aux" 1761239271.75989 1163 e04eaec22e6cae0488f4501284523488 "pdflatex"
+["bibtex IEEESiPhotonics2026_main"] 1761328443.71447 "IEEESiPhotonics2026_main.aux" "IEEESiPhotonics2026_main.bbl" "IEEESiPhotonics2026_main" 1761329891.98337 0
+  "./IEEEtran.bst" 1761311672.34965 57746 49da1aba5c676bbd668c835fc5d6d2e5 ""
+  "./bibli.bib" 1761324733.95855 2252 2fb14bf23e0c8a800869881adabc68db ""
+  "IEEESiPhotonics2026_main.aux" 1761329891.84086 1446 9a5c2a408b3abe37dffdf5d8a8dc8b64 "pdflatex"
   (generated)
   "IEEESiPhotonics2026_main.bbl"
   "IEEESiPhotonics2026_main.blg"
   (rewritten before read)
-["pdflatex"] 1761239270.93547 "/home/phars10/LaTeX/IEEESiPhotonics2026/IEEESiPhotonics2026_main.tex" "IEEESiPhotonics2026_main.pdf" "IEEESiPhotonics2026_main" 1761239271.89831 0
+["pdflatex"] 1761329891.01804 "/home/phars10/LaTeX/IEEESiPhotonics2026/IEEESiPhotonics2026_main.tex" "IEEESiPhotonics2026_main.pdf" "IEEESiPhotonics2026_main" 1761329891.98348 0
   "/etc/texmf/web2c/texmf.cnf" 1758048665.97435 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/phars10/LaTeX/IEEESiPhotonics2026/IEEESiPhotonics2026_main.tex" 1761239203.168 2165 438f6217e7c0a78512ab9010d9db1c3e ""
+  "/home/phars10/LaTeX/IEEESiPhotonics2026/IEEESiPhotonics2026_main.tex" 1761329890.86168 1563 c21846bc3444077f1ac4009956792e66 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -113,16 +113,16 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1758048675.8611 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1758048695 8214607 1caf1ccaa6c1d9a50caa7dadb6703043 ""
-  "Core.png" 1761234450.7486 1455142 f3e7aaff325d341ba85d03e2be197f1f ""
-  "IEEESiPhotonics2026_main.aux" 1761239271.75989 1163 e04eaec22e6cae0488f4501284523488 "pdflatex"
-  "IEEESiPhotonics2026_main.bbl" 1761239270.92173 1418 87b541f27443ea20008ca3151f2cd11a "bibtex IEEESiPhotonics2026_main"
-  "IEEESiPhotonics2026_main.tex" 1761239203.168 2165 438f6217e7c0a78512ab9010d9db1c3e ""
-  "IEEEtran.cls" 1760635835.85985 288304 b67b6fc6c2abb39f9b461923f5199343 ""
-  "MnI.tex" 1761237621.4935 1728 45a93e6ea16a50fe8d67dc434701fe94 ""
-  "PnM.tex" 1761237639.36713 4721 49fd15918ffb5421b579746d053231e2 ""
+  "Core.png" 1761325609.898 2561515 c211d32a94968a43016afbd477ee28cf ""
+  "IEEESiPhotonics2026_main.aux" 1761329891.84086 1446 9a5c2a408b3abe37dffdf5d8a8dc8b64 "pdflatex"
+  "IEEESiPhotonics2026_main.bbl" 1761328443.75777 1984 5e0a3fb67a9eae00b2097ac658918aa7 "bibtex IEEESiPhotonics2026_main"
+  "IEEESiPhotonics2026_main.tex" 1761329890.86168 1563 c21846bc3444077f1ac4009956792e66 ""
+  "IEEEtran.cls" 1761310863.36577 288304 b67b6fc6c2abb39f9b461923f5199343 ""
+  "MnI.tex" 1761329073.17797 2108 cbc8345e8c8a70c49f22eba7219708a6 ""
+  "PnM.tex" 1761329680.79452 4377 4d45894c390195555fb9397dc2bb3562 ""
   "abstract.tex" 1761060163.79256 299 296ac78e139a8ec39aa1acde76883dd2 ""
-  "conclusion.tex" 1761236864.16319 286 f6251a40b76ff912a004fba075cfdfb0 ""
-  "introduction.tex" 1761239246.50201 2907 e48eb4e18a5250e0a746a1d6888a55c4 ""
+  "conclusion.tex" 1761329656.05549 618 0551211ca10c92c71ef0998c1a3a3794 ""
+  "introduction.tex" 1761326289.72181 3052 a20406f050f467fc899548c35e652d49 ""
   (generated)
   "IEEESiPhotonics2026_main.aux"
   "IEEESiPhotonics2026_main.log"

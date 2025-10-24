@@ -20,10 +20,19 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{zanetto_unconventional_2023}
-F.~Zanetto, F.~Toso, M.~Crico, F.~Morichetti, A.~Melloni, G.~Ferrari, and M.~Sampietro, ``Unconventional monolithic electronics in a conventional silicon photonics platform,'' \emph{{IEEE} Transactions on Electron Devices}, vol.~70, no.~10, pp. 4993--4998, 2023.
-
 \bibitem{shekhar_roadmapping_2024}
-S.~Shekhar, W.~Bogaerts, L.~Chrostowski, J.~E. Bowers, M.~Hochberg, R.~Soref, and B.~J. Shastri, ``Roadmapping the next generation of silicon photonics,'' \emph{Nat Commun}, vol.~15, no.~1, p. 751, 2024.
+S.~Shekhar \emph{et~al.}, ``Roadmapping the next generation of silicon photonics,'' \emph{Nat Commun}, vol.~15, no.~1, p. 751, 2024.
+
+\bibitem{zanetto_unconventional_2023}
+F.~Zanetto \emph{et~al.}, ``Unconventional monolithic electronics in a conventional silicon photonics platform,'' \emph{{IEEE} Transactions on Electron Devices}, vol.~70, no.~10, pp. 4993--4998, 2023.
+
+\bibitem{crico_monolithic_2024}
+M.~Crico \emph{et~al.}, ``Monolithic transimpedance amplifier for on-chip light monitoring in pure silicon photonics,'' \emph{{IEEE} Photonics Technology Letters}, vol.~36, no.~15, pp. 965--968, 2024.
+
+\bibitem{zanetto_timemultiplexed_2023}
+F.~Zanetto \emph{et~al.}, ``Time‐{Multiplexed} {Control} of {Programmable} {Silicon} {Photonic} {Circuits} {Enabled} by {Monolithic} {CMOS} {Electronics},'' \emph{Laser \&amp; Photonics Reviews}, vol.~17, no.~11, p. 2300124, 2023.
+
+\bibitem{ajayi_openroad_2019}
+T.~Ajayi \emph{et~al.}, ``Openroad: Toward a self-driving, open-source digital layout implementation tool chain,'' \emph{Proc. GOMACTECH}, pp. 1105--1110, 2019.
 
 \end{thebibliography}
