@@ -1,0 +1,78 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%Template version as of 6/27/2024
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{svg}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Towards a Monolithic Electronic Platform in Conventional Silicon Photonics Processes\\
+\thanks{The authors want to acknowledge the financial support of the NSREC and Francesco Zanetto for useful discussions.}
+}
+\author{\IEEEauthorblockN{Philippe Arsenault and Wei Shi$^*$}
+\IEEEauthorblockA{\textit{Department of Electrical and Computer Engineering, COPL, Univeristé Laval, Québec, Canada} \\
+$^*$wei.shi@gel.ulaval.ca}
+}
+
+% Define the macro
+\newcommand{\CitationNeeded}{\textcolor{red}{\setlength{\fboxsep}{1pt}\colorbox{yellow}{[citation needed]}}}
+
+\maketitle
+
+\begin{abstract}
+\input{abstract.tex}
+\end{abstract}
+
+\begin{IEEEkeywords}
+Silicon photonics, Monolithic integrated circuit, electronic-photonic co-design, CMOS integrated circuits
+\end{IEEEkeywords}
+
+\section{Introduction}
+\input{introduction.tex}
+
+
+
+\section{Fundamentals and Principle}
+\input{PnM.tex}
+
+\section{Implementation and Challenges}
+\input{MnI.tex}
+
+\section{Conclusion}
+\input{conclusion.tex}
+\bibliographystyle{IEEEtran}
+\bibliography{bibli}
+\iffalse
+\begin{table}[htbp]
+\caption{Table Type Styles}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
+\cline{2-4} 
+\textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
+\hline
+copy& More table copy$^{\mathrm{a}}$& &  \\
+\hline
+\multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
+\end{tabular}
+\label{tab1}
+\end{center}
+\end{table}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics{fig1.png}}
+\caption{Example of a figure caption.}
+\label{fig}
+\end{figure}
+\fi
+
+\end{document}
