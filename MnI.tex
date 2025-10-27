@@ -1,16 +1,21 @@
-The proposed approch in this article is to give the photonics chip the ability to communicate digitally with an external controller, fixing the number of external connections. 
-The Fig.\ref{fig:Core}.A shows the proposed architecture of an electronic-photonic integrated circuit with an internal core driving photonic structures with a DAC and an array of sample and hold circuits, and receiving signal from power monitor photodetectors with an ADC, a transimpedance amplifier and an analog multiplexer. 
-The analog circuits can be made directly with the transistors while the mixed and digital circuits need more tooling to be possible. 
-Thus, a digital electronic kit was created.
-It was then fed into an open-source automated router, OpenROAD\cite{ajayi_openroad_2019}, along with the verilog design files and the technology files. 
-The conceptual schematic of the core is shown in Fig.\ref{fig:Core}.B while the layout is shown in Fig.\ref{fig:Core}.C.
+A digital core can be used for many thing as it's logic is dictated by behavioral code like \textit{Verilog}.
+One proposed application for such a core would be to handle the DC bias setting points of the photonics structure.
+Instead of having roughly two external pads for each structure, the core propose a fixed number of pads (10).
+It's 16 bits word can either read (0) or write (1) onto one of the eight structures (3-bits adress) a 12-bits value. 
+The length of the word, the width of the adress and the precision are all fixed by the designer at the behavioral level. 
+The Fig.\ref{fig:Core}.A shows the proposed architecture along with the supporting mixed or analog circuits that can be made of the same transistors. 
+The Fig.\ref{fig:Core}.B shows how the core is built inside, as well as it's inputs and outputs in relation with Fig.\ref{fig:Core}.C where all the connections are routed to pads instead of supportings circuits. 
+The placement and routing of the 5800 transistors of this core were made automatically by the open-source tool OpenROAD\cite{ajayi_openroad_2019} with the appropriate technology files and gate drawings, made by the GDSFactory python tool.
+Fig.\ref{fig:Core}.D shows a close-up of a NMOS transistor, an essential building block of the gates. 
+Compared to the transistors used in analog circuits, digital transistors aim to be the smallest and the fastest they can while having the best transconductance gain. 
+As such, a modeling of it's parameters that affect both the maximum frequency of operation and the gain will be presented in the next section. 
 
-Some challenges did arise, one file we were not able to provide to the router yet is the timing library of the gates, which can either be simulated by parasitic extraction simulations or constructed via a measurment campaign.  
-Nevertheless, not having the exact timing of the gate influences the maximum clock frequency of the circuit, not its logics, as the circuit will still be capable to compute at a lower speed than expected. 
-Additionnaly, during our first measurment campaign of the reduced $L$ and smaller gap transistors, a flaw in the fabrication process was discovered. 
-Since the photonics nodes care much more about the optical properties of the waveguides, when we closed the gap between the channel and the gate,a significant amount of the transistor exhibited an unwanted electrical connection was made between the gate and the drain/source or channel, meaning that the device was unusable with the minimal distance prescribed by the foundry. 
-Finally, while the size of the Fig.\ref{fig:Core}.C is large, shrinking it is not limited by the physics of the implementation but rather the foundry's tolerances on vias and metals.
+
+%While using the tool, some challenges did arise, one file we were not able to provide to the router yet is the timing library of the gates, which can either be simulated by parasitic extraction simulations or constructed via a measurment campaign.
+%Nevertheless, not having the exact timing of the gate influences the maximum clock frequency of the circuit, not its logics, as the circuit will still be capable to compute at a lower speed than expected. 
+%Another challenge encountered was the routing density. 
+%As photonic nodes are not geared toward metalic routing (i.e. limited number of metal levels, vias do not stack, wide metals only), the automated router was not finding solution to the maze problem imposed to it when the density of the circuit was over 70\%. 
+%%Hence, the size of the core in Fig.\ref{fig:Core}.C is dictated not only by the size of the gates themselves but also the metal routing possibility given the designs rules. 
+
+%As such, the next section will focus more on the design of the transistor itself and it's improvement to suit the needs of the digital electronics.
  
-
-
-

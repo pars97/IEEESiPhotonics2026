@@ -14,16 +14,19 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Towards a Monolithic Electronic Platform in Conventional Silicon Photonics Processes\\
+\title{A Monolithic Electronic-Photonic Platform in Conventional Silicon Photonics Processes\\
 \thanks{The authors want to acknowledge the financial support of the NSREC and Francesco Zanetto for useful discussions.}
 }
-\author{\IEEEauthorblockN{Philippe Arsenault and Wei Shi$^*$}
+\author{\IEEEauthorblockN{Philippe Arsenault, Alireza Geravand and Wei Shi$^*$}
 \IEEEauthorblockA{\textit{Department of Electrical and Computer Engineering, COPL, Université Laval, Québec, Canada} \\
 $^*$wei.shi@gel.ulaval.ca}
 }
 
 % Define the macro
 \newcommand{\CitationNeeded}{\textcolor{red}{\setlength{\fboxsep}{1pt}\colorbox{yellow}{[citation needed]}}}
+% Define the macro
+\newcommand{\Value}{\textcolor{red}{\setlength{\fboxsep}{1pt}\colorbox{yellow}{[Missing Value]}}}
+\newcommand{\MFig}{\textcolor{blue}{\setlength{\fboxsep}{1pt}\colorbox{green}{[Missing Figure]}}}
 
 \maketitle
 
@@ -38,11 +41,25 @@ Silicon photonics, Monolithic integrated circuit, electronic-photonic co-design,
 \section{Introduction}
 \input{introduction.tex}
 
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Core.png}
+    \caption{A. The proposed digital core schematic, 
+    B. The digital core in a photonics system,
+    C. Layout of the digital Core, the inlet shows the detail of a singular digital gate,
+    D. A zoomed view of a single NMOS transistor and
+    E. The 3D-view of a NMOS transistor beside a waveguide. The waveguide has a germanium photodetector on top.   
+    }
+    \label{fig:Core}
+\end{figure*}
+
+\section{Implementation}
+\input{MnI.tex}
+
 \section{Fundamentals and Principle}
 \input{PnM.tex}
 
-\section{Implementation and Challenges}
-\input{MnI.tex}
+
 
 \section{Conclusion}
 \input{conclusion.tex}

@@ -1,4 +1,13 @@
 Advancements towards a fully electronics-photonics monolithic node were demonstrated by improving of the fundamental building block, the MOSFET, permitting the building of a digital electronics library. 
-This library was then used with open-source tooling to produce a digital core with SPI capabilities showing that the implementation of a digital library was successful.
-Next steps of this endavour are to build a simulation environment where the analog transistors are well modelled in order to construct the rest of the analog and mixed component to create a completely digitally adressable photonics structures.
+This library was then used with open-source tooling to produce a digital core with SPI capabilities showing that the implementation of a digital library was successful albeit some restrictions and barriers are still in place.
+First is a file we were not able to provide to the automated router is the timing library of the gates, which can either be simulated by parasitic extraction simulations or constructed via a measurment campaign.
+Nevertheless, not having the exact timing of the gate influences the maximum clock frequency of the circuit, not its logics, as the circuit will still be capable to compute at a lower speed. 
+Second challenge encountered was the routing density. 
+As photonic nodes are not geared toward complex and dense metalic routing (i.e. limited number of metal levels, vias do not stack, wide metals only), the automated router was not finding solution to the maze problem when the density of the circuit was over 70\%. 
+Hence, the size of the core is dictated not only by the size of the gates themselves but also the metal routing rules given the foundry. 
+
+To continue, the next steps of this endavour are varied.
+The supporting components in Fig.\ref{fig:Core}.A are yet to be built, in part because they are mixed or analog circuitsand they need a reliable simulation environment supported by measurment of an array of sizes of $L$ and gap values.
+Once done, the timing library should be generated and given to the automated router in order to complete a monolithic electronic-photonic platform in a conventionnal silicon photonic process. 
+
 
