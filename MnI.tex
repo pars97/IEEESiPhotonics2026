@@ -1,14 +1,14 @@
-A digital core can be used for many thing as it's logic is dictated by behavioral code like \textit{Verilog}.
+A digital core can be used for many thing, as it's logic is dictated by behavioral code like \textit{Verilog}.
 One proposed application for such a core would be to handle the DC bias setting points of the photonics structure.
-Instead of having roughly two external pads for each structure, the core propose a fixed number of pads (10).
-It's 16 bits word can either read (0) or write (1) onto one of the eight structures (3-bits adress) a 12-bits value. 
-The length of the word, the width of the adress and the precision are all fixed by the designer at the behavioral level. 
+Instead of having roughly two external pads for each structure, the core proposes a fixed number of pads (10), changing the connection paradigm.
+It's 16-bits word can either read (0) or write (1) onto one of the eight structures (3-bits address) a 12-bits value. 
+The length of the word, the width of the address and the precision are all fixed by the designer at the behavioral level. 
 The Fig.\ref{fig:Core}.A shows the proposed architecture along with the supporting mixed or analog circuits that can be made of the same transistors. 
-The Fig.\ref{fig:Core}.B shows how the core is built inside, as well as it's inputs and outputs in relation with Fig.\ref{fig:Core}.C where all the connections are routed to pads instead of supportings circuits. 
-The placement and routing of the 5800 transistors of this core were made automatically by the open-source tool OpenROAD\cite{ajayi_openroad_2019} with the appropriate technology files and gate drawings, made by the GDSFactory python tool.
+The Fig.\ref{fig:Core}.B shows how the core is built inside, as well as its inputs and outputs in relation with Fig.\ref{fig:Core}.C where all the connections are routed to pads instead of supporting circuits. 
+The placement and routing of the 5800 transistors of this core were made automatically by the open-source tool OpenROAD\cite{ajayi_openroad_2019}, with the appropriate technology files and gate drawings, created using the python GDS drawing tool GDSFactory.
 Fig.\ref{fig:Core}.D shows a close-up of a NMOS transistor, an essential building block of the gates. 
 Compared to the transistors used in analog circuits, digital transistors aim to be the smallest and the fastest they can while having the best transconductance gain. 
-As such, a modeling of it's parameters that affect both the maximum frequency of operation and the gain will be presented in the next section. 
+As such, a modeling of its parameters that affect both the maximum frequency of operation and the gain will be presented in the next section. 
 
 
 %While using the tool, some challenges did arise, one file we were not able to provide to the router yet is the timing library of the gates, which can either be simulated by parasitic extraction simulations or constructed via a measurment campaign.
